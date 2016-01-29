@@ -8,7 +8,8 @@ Sample question structure: when will the ____ arrive at _____?
 
 i.e. - When will the gold line arrive at Del Mar Station?
 
-It is built using iOS (Swift), the Wit.ai api for natural language processing, and the LA Metro Rail api.
+It is built using iOS (Swift), the Wit.ai API for natural language processing, and the LA Metro Rail API.
 
 https://wit.ai/
+
 http://developer.metro.net/
