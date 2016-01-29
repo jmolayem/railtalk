@@ -1,5 +1,5 @@
 # railtalk
-This is a mobile (iOS) app uses free unstructured voice requests to predict arrival times for nearby trains. 
+This is a mobile (iOS) app that uses free unstructured voice requests to predict arrival times for nearby trains. 
 
 For example, the expo line’s exact name "Expo Park / USC Station" can be deconstructed to more familiar descriptors: 
 Exposition, expo, USC, Coliseum, SC, Jefferson St, California Science Museum, Natural History Museum, Rose Garden, and so and so forth. 
