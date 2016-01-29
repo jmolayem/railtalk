@@ -1,7 +1,7 @@
 # railtalk
 This is a mobile (iOS) app that uses free unstructured voice requests to predict arrival times for nearby trains. 
 
-For example, the expo line’s exact name "Expo Park / USC Station" can be deconstructed to more familiar descriptors: 
+For example, to know the predicted arrival of a train at "Expo Park / USC Station," the station name can be deconstructed to more familiar descriptors such as:
 Exposition, expo, USC, Coliseum, SC, Jefferson St, California Science Museum, Natural History Museum, Rose Garden, and so and so forth. 
 
 The goal of this project is to make querying a live data stream into a more natural extension of language processing.
