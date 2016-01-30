@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		64A91F801C4F90030002C87F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A91F7F1C4F90020002C87F /* AVFoundation.framework */; };
+		64A91FE11C5C36F90002C87F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64A91FE01C5C36F90002C87F /* LaunchScreen.xib */; };
 		64C7ABCC1C4DC68900565D28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C7ABCB1C4DC68900565D28 /* AppDelegate.swift */; };
 		64C7ABCE1C4DC68900565D28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C7ABCD1C4DC68900565D28 /* ViewController.swift */; };
 		64C7ABD11C4DC68900565D28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C7ABCF1C4DC68900565D28 /* Main.storyboard */; };
 		64C7ABD31C4DC68900565D28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C7ABD21C4DC68900565D28 /* Assets.xcassets */; };
-		64C7ABD61C4DC68900565D28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C7ABD41C4DC68900565D28 /* LaunchScreen.storyboard */; };
 		64C7ABE11C4DC68900565D28 /* railtalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C7ABE01C4DC68900565D28 /* railtalkTests.swift */; };
 		8BD1190160E52DD6B10C2151 /* Pods_railtalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7DFE97B57F33B08E233BD0 /* Pods_railtalk.framework */; };
 /* End PBXBuildFile section */
@@ -29,12 +29,12 @@
 
 /* Begin PBXFileReference section */
 		64A91F7F1C4F90020002C87F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		64A91FE01C5C36F90002C87F /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		64C7ABC81C4DC68900565D28 /* railtalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = railtalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64C7ABCB1C4DC68900565D28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64C7ABCD1C4DC68900565D28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		64C7ABD01C4DC68900565D28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64C7ABD21C4DC68900565D28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		64C7ABD51C4DC68900565D28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64C7ABD71C4DC68900565D28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64C7ABDC1C4DC68900565D28 /* railtalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = railtalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64C7ABE01C4DC68900565D28 /* railtalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = railtalkTests.swift; sourceTree = "<group>"; };
@@ -90,8 +90,8 @@
 				64C7ABCB1C4DC68900565D28 /* AppDelegate.swift */,
 				64C7ABCD1C4DC68900565D28 /* ViewController.swift */,
 				64C7ABCF1C4DC68900565D28 /* Main.storyboard */,
+				64A91FE01C5C36F90002C87F /* LaunchScreen.xib */,
 				64C7ABD21C4DC68900565D28 /* Assets.xcassets */,
-				64C7ABD41C4DC68900565D28 /* LaunchScreen.storyboard */,
 				64C7ABD71C4DC68900565D28 /* Info.plist */,
 			);
 			path = railtalk;
@@ -208,7 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64C7ABD61C4DC68900565D28 /* LaunchScreen.storyboard in Resources */,
+				64A91FE11C5C36F90002C87F /* LaunchScreen.xib in Resources */,
 				64C7ABD31C4DC68900565D28 /* Assets.xcassets in Resources */,
 				64C7ABD11C4DC68900565D28 /* Main.storyboard in Resources */,
 			);
@@ -306,14 +306,6 @@
 				64C7ABD01C4DC68900565D28 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		64C7ABD41C4DC68900565D28 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				64C7ABD51C4DC68900565D28 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

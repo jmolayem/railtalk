@@ -11,8 +11,7 @@ import Wit
 import AVFoundation
 
 class ViewController: UIViewController {
-    
-    
+
     @IBOutlet weak var backgroundImage: UIImageView!
     //self.view.backgroundImage=[UIbackgroundImage colorWithPatternImage:[UIImage imageNamed:@"train.png"]]
     var synthesizer: AVSpeechSynthesizer?
