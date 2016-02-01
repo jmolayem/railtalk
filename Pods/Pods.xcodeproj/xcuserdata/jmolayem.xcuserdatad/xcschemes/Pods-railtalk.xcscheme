@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'ECA48F3FAB57AD60A86F56F2'
+               BlueprintIdentifier = '624CEE0CC3979AE8CD6EFC98'
                BlueprintName = 'Pods-railtalk'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_railtalk.framework'>

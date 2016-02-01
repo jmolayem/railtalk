@@ -139,19 +139,39 @@ extension ViewController : WitDelegate {
         
         if let r = entities["route"], s = entities["stop"] {
             let route = r[0] as Dictionary
-            let rmetadata : String = route["metadata"] as! String
+            let stop = s[0] as Dictionary
             
-                let stop = s[0] as Dictionary
-                let smetadata = stop["metadata"] as! String
+            if let smetadata = stop["metadata"] as? String{
+                //how would we handle two variations of the URL?
+                
+                let nextBusString = "\(smetadata)"
 
-            let nextBusString = "http://www.nextbus.com/customStopSelector/adaPrediction.jsp?a=lametro-rail&r=\(rmetadata)&d=\(rmetadata)_0_var1&s=\(smetadata)_0"
-            let webView = UIWebView(frame: self.view.frame)
-            let url = NSURL(string: nextBusString);
-            let urlRequest = NSURLRequest(URL: url!)
-            webView.loadRequest(urlRequest)
-            
-            self.view.addSubview(webView);
+//                let nextBusString = "http://www.nextbus.com/customStopSelector/adaPrediction.jsp?a=lametro-rail&r=\(rmetadata)&d=\(rmetadata)_1_var0&s=\(smetadata)_1"
+    //            let nextBusString = "http://www.nextbus.com/customStopSelector/adaPrediction.jsp?a=lametro-rail&r=\(rmetadata)&d=\(rmetadata)_1_var1&s=\(smetadata)_0"
+                
+                let webView = UIWebView(frame: self.view.frame)
+                print(nextBusString)
+                let url = NSURL(string: nextBusString);
+                let urlRequest = NSURLRequest(URL: url!)
+                webView.loadRequest(urlRequest)
+                
+                self.view.addSubview(webView)
+                
+                return
+            }
         }
+        
+        self.displayErrorForMissedEntity("I misunderstood, can you repeat it?")
+    }
+    
+    func displayErrorForMissedEntity(description: String!) {
+        let alert : UIAlertController = UIAlertController(title: "Error", message: description, preferredStyle: UIAlertControllerStyle.Alert)
+
+        let action : UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { (alertAction : UIAlertAction) -> Void in
+            alert.dismissViewControllerAnimated(true, completion: nil)
+        }
+        alert.addAction(action)
+        self.presentViewController(alert, animated: true, completion: nil)
     }
     
     func updateViewLayout() {

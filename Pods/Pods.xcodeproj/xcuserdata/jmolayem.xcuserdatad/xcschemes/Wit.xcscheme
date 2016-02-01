@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '636CBF9016BB09639D166999'
+               BlueprintIdentifier = '83A69F29EA04FDBDC7CB4106'
                BlueprintName = 'Wit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Wit.framework'>
