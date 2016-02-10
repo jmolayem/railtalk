@@ -1,5 +1,6 @@
 # railtalk
 This is a mobile (iOS) app that uses free unstructured voice requests to predict arrival times for nearby trains. 
+https://itunes.apple.com/ca/app/railtalk/id1080240650?mt=8
 
 For example, to know the predicted arrival of a train at "Expo Park / USC Station," the station name can be deconstructed to more familiar descriptors such as:
 Exposition, expo, USC, Coliseum, SC, Jefferson St, California Science Museum, Natural History Museum, Rose Garden, and so and so forth. 
