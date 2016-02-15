@@ -165,7 +165,7 @@ extension ViewController : WitDelegate {
     }
     
     func displayErrorForMissedEntity(description: String!) {
-        let alert : UIAlertController = UIAlertController(title: "Error", message: description, preferredStyle: UIAlertControllerStyle.Alert)
+        let alert : UIAlertController = UIAlertController(title: "Trouble hearing you", message: description, preferredStyle: UIAlertControllerStyle.Alert)
 
         let action : UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { (alertAction : UIAlertAction) -> Void in
             alert.dismissViewControllerAnimated(true, completion: nil)

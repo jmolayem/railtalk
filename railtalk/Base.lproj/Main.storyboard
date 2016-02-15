@@ -1,15 +1,141 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="XX5-Y1-6PF">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--RailTalk-->
+        <scene sceneID="Iqh-Qm-fh9">
+            <objects>
+                <viewController id="bD1-P5-BDd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LQK-Jg-8QI"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wfq-Wx-uTR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6dW-oN-F6W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jZk-E6-E1b">
+                                <rect key="frame" x="0.0" y="64" width="320" height="422"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Welcome. RailTalk is intelligent assistant that uses language to predict arrival times of nearby LA Metro trains. " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xAE-ww-jZd">
+                                <rect key="frame" x="49" y="174" width="239" height="207"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Fj-R9-RHE">
+                                <rect key="frame" x="0.0" y="484" width="320" height="84"/>
+                                <color key="backgroundColor" red="0.42745098040000001" green="0.69411764710000001" blue="0.29803921570000003" alpha="0.59999999999999998" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="ftk-k2-YQg"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uyS-bt-Xci" kind="push" id="wNC-F0-cGs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="RailTalk" id="z8T-j5-aQr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NqS-Pi-Ej2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1264" y="77"/>
+        </scene>
+        <!--RailTalk-->
+        <scene sceneID="257-gs-1Q8">
+            <objects>
+                <viewController id="uyS-bt-Xci" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hmU-ol-CG2"/>
+                        <viewControllerLayoutGuide type="bottom" id="8ou-l8-hsB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KAF-hG-eRk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82H-OZ-pI3">
+                                <rect key="frame" x="0.0" y="484" width="320" height="84"/>
+                                <color key="backgroundColor" red="0.42745098040000001" green="0.69411764710000001" blue="0.29803921570000003" alpha="0.59999999999999998" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MdS-es-ZSE" kind="push" id="5jR-Ex-m0j"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="MIK-1z-n3p">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="To use, click the microphone and ask when the train will arrive at ________? (your stop name)" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VfR-57-EKe">
+                                <rect key="frame" x="41" y="159" width="239" height="207"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="RailTalk" id="nes-RO-G0g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Kn-nt-FEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1667" y="81"/>
+        </scene>
         <!--View Controller-->
+        <scene sceneID="jqx-sW-Baf">
+            <objects>
+                <viewController id="MdS-es-ZSE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PyQ-7Y-f92"/>
+                        <viewControllerLayoutGuide type="bottom" id="Idv-HU-oIY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lvk-jw-xlV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFj-0g-vev">
+                                <rect key="frame" x="0.0" y="484" width="320" height="84"/>
+                                <color key="backgroundColor" red="0.42745098040000001" green="0.69411764710000001" blue="0.29803921570000003" alpha="0.59999999999999998" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="sgz-No-hVo"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="29E-I6-EhY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sNg-ZV-6GJ">
+                                <rect key="frame" x="41" y="155" width="239" height="252.5"/>
+                                <string key="text">...don't know the exact name of your stop? No worries, just speak a close description. For example, "USC/ Exposition Station" could be called USC, exposition, science museum, coliseum, etc</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dSR-UR-W8t"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dfa-SJ-p0w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2024" y="76"/>
+        </scene>
+        <!--RailTalk-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="railtalk" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -22,43 +148,23 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="train" translatesAutoresizingMaskIntoConstraints="NO" id="haP-4i-NEj">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nFR-qS-ieU">
-                                <rect key="frame" x="0.0" y="469" width="600" height="184.5"/>
-                            </view>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aeo-ba-xSs">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="f22-cM-fZa">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wxh-Cs-TAf">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
-                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="fZL-vr-rXh">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sample Request Format" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChY-xM-CrG">
-                                                        <rect key="frame" x="29" y="15" width="263" height="28"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When will the expo arrive at the coliseum?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrA-iw-sDB">
-                                                        <rect key="frame" x="16" y="51" width="289" height="69"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </label>
-                                                </subviews>
-                                            </view>
-                                            <vibrancyEffect>
-                                                <blurEffect style="light"/>
-                                            </vibrancyEffect>
-                                        </visualEffectView>
-                                    </subviews>
-                                </view>
-                                <blurEffect style="light"/>
-                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnV-zJ-U4b">
+                                <rect key="frame" x="0.0" y="484" width="320" height="84"/>
+                                <color key="backgroundColor" red="0.42745098040000001" green="0.69411764710000001" blue="0.29803921570000003" alpha="0.59999999999999998" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Stuck? Return to your training.">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uyS-bt-Xci" kind="push" id="cRI-ye-zqJ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Try: when will the expo arrive at the coliseum?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CV8-vb-Td1">
+                                <rect key="frame" x="0.0" y="60" width="320" height="61"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -68,21 +174,43 @@
                             <constraint firstItem="haP-4i-NEj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="F3O-0Z-uDj"/>
                             <constraint firstItem="haP-4i-NEj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Mcc-TJ-9Sk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="haP-4i-NEj" secondAttribute="trailing" constant="-20" id="PYa-kg-MS0"/>
-                            <constraint firstItem="Aeo-ba-xSs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="PmP-78-vTi"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="haP-4i-NEj" secondAttribute="bottom" id="YdS-Tz-wiZ"/>
-                            <constraint firstItem="Aeo-ba-xSs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="eso-I0-6Xl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Aeo-ba-xSs" secondAttribute="trailing" constant="-20" id="iYJ-CZ-SD8"/>
-                            <constraint firstItem="nFR-qS-ieU" firstAttribute="top" secondItem="Aeo-ba-xSs" secondAttribute="bottom" constant="342" id="kYX-ri-p9O"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="haP-4i-NEj" secondAttribute="bottom" id="ncl-9a-V5Q"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Wp9-q2-ECr"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="RailTalk" id="BGo-32-UEC"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1053" y="97"/>
+            <point key="canvasLocation" x="2375" y="81"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="P9V-Pw-tvg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XX5-Y1-6PF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Sg2-5h-Pw1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YhI-6L-DI8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bD1-P5-BDd" kind="relationship" relationship="rootViewController" id="a1l-gV-nYp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UxB-S9-N5x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="732" y="77"/>
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="1600" height="1200"/>
         <image name="train" width="2550" height="2641"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wNC-F0-cGs"/>
+    </inferredMetricsTieBreakers>
 </document>
