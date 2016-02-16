@@ -18,20 +18,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jZk-E6-E1b">
-                                <rect key="frame" x="0.0" y="64" width="320" height="422"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jZk-E6-E1b">
+                                <rect key="frame" x="0.0" y="64" width="320" height="420"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Welcome. RailTalk is intelligent assistant that uses language to predict arrival times of nearby LA Metro trains. " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xAE-ww-jZd">
-                                <rect key="frame" x="49" y="174" width="239" height="207"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Welcome. RailTalk is intelligent assistant that uses language to predict arrival times of nearby LA Metro trains. " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xAE-ww-jZd">
+                                <rect key="frame" x="40.5" y="180.5" width="239" height="207"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="239" id="Kzk-KD-Pvp"/>
+                                    <constraint firstAttribute="height" constant="207" id="Zhj-hR-WIx"/>
+                                </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Fj-R9-RHE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Fj-R9-RHE">
                                 <rect key="frame" x="0.0" y="484" width="320" height="84"/>
                                 <color key="backgroundColor" red="0.42745098040000001" green="0.69411764710000001" blue="0.29803921570000003" alpha="0.59999999999999998" colorSpace="deviceRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="500" id="ftk-k2-YQg"/>
+                                    <constraint firstAttribute="height" constant="84" id="7K2-c2-0Id"/>
                                 </constraints>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -43,12 +47,23 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jZk-E6-E1b" firstAttribute="leading" secondItem="6dW-oN-F6W" secondAttribute="leading" id="2tb-kk-ATj"/>
+                            <constraint firstItem="5Fj-R9-RHE" firstAttribute="leading" secondItem="6dW-oN-F6W" secondAttribute="leading" id="7hC-ZC-rNl"/>
+                            <constraint firstAttribute="trailing" secondItem="jZk-E6-E1b" secondAttribute="trailing" id="8HV-LZ-Bg3"/>
+                            <constraint firstItem="xAE-ww-jZd" firstAttribute="centerX" secondItem="6dW-oN-F6W" secondAttribute="centerX" id="EfM-yX-DNp"/>
+                            <constraint firstItem="jZk-E6-E1b" firstAttribute="top" secondItem="LQK-Jg-8QI" secondAttribute="bottom" id="Lws-SO-Nsw"/>
+                            <constraint firstAttribute="trailing" secondItem="5Fj-R9-RHE" secondAttribute="trailing" id="Oyh-pj-aa8"/>
+                            <constraint firstItem="xAE-ww-jZd" firstAttribute="centerY" secondItem="6dW-oN-F6W" secondAttribute="centerY" id="sHS-cB-QgR"/>
+                            <constraint firstItem="5Fj-R9-RHE" firstAttribute="top" secondItem="jZk-E6-E1b" secondAttribute="bottom" id="wti-Sb-Jqs"/>
+                            <constraint firstItem="Wfq-Wx-uTR" firstAttribute="top" secondItem="5Fj-R9-RHE" secondAttribute="bottom" id="zUm-QJ-W4G"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="RailTalk" id="z8T-j5-aQr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NqS-Pi-Ej2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1264" y="77"/>
+            <point key="canvasLocation" x="952" y="101"/>
         </scene>
         <!--RailTalk-->
         <scene sceneID="257-gs-1Q8">
@@ -62,9 +77,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82H-OZ-pI3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="MIK-1z-n3p">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="To use, click the microphone and ask when the train will arrive at ________? (your stop name)" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VfR-57-EKe">
+                                <rect key="frame" x="41" y="159" width="239" height="207"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82H-OZ-pI3">
                                 <rect key="frame" x="0.0" y="484" width="320" height="84"/>
                                 <color key="backgroundColor" red="0.42745098040000001" green="0.69411764710000001" blue="0.29803921570000003" alpha="0.59999999999999998" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="8JP-1a-h1O"/>
+                                </constraints>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -73,23 +100,25 @@
                                     <segue destination="MdS-es-ZSE" kind="push" id="5jR-Ex-m0j"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="MIK-1z-n3p">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="To use, click the microphone and ask when the train will arrive at ________? (your stop name)" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VfR-57-EKe">
-                                <rect key="frame" x="41" y="159" width="239" height="207"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MIK-1z-n3p" firstAttribute="leading" secondItem="KAF-hG-eRk" secondAttribute="leading" id="93R-lo-2bO"/>
+                            <constraint firstItem="82H-OZ-pI3" firstAttribute="top" secondItem="MIK-1z-n3p" secondAttribute="bottom" id="HdC-ym-kSq"/>
+                            <constraint firstItem="VfR-57-EKe" firstAttribute="centerY" secondItem="KAF-hG-eRk" secondAttribute="centerY" id="LgW-tU-fZ0"/>
+                            <constraint firstAttribute="trailing" secondItem="82H-OZ-pI3" secondAttribute="trailing" id="R5Q-gF-tA0"/>
+                            <constraint firstItem="8ou-l8-hsB" firstAttribute="top" secondItem="82H-OZ-pI3" secondAttribute="bottom" id="cUj-23-9nG"/>
+                            <constraint firstItem="82H-OZ-pI3" firstAttribute="leading" secondItem="KAF-hG-eRk" secondAttribute="leading" id="glL-M0-GsN"/>
+                            <constraint firstItem="MIK-1z-n3p" firstAttribute="top" secondItem="KAF-hG-eRk" secondAttribute="top" id="i3L-yR-6KD"/>
+                            <constraint firstItem="VfR-57-EKe" firstAttribute="centerX" secondItem="KAF-hG-eRk" secondAttribute="centerX" id="ioh-Bu-PMq"/>
+                            <constraint firstAttribute="trailing" secondItem="MIK-1z-n3p" secondAttribute="trailing" id="lnO-uh-nkH"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="RailTalk" id="nes-RO-G0g"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Kn-nt-FEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1667" y="81"/>
+            <point key="canvasLocation" x="1329" y="101"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jqx-sW-Baf">
@@ -103,9 +132,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFj-0g-vev">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="29E-I6-EhY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFj-0g-vev">
                                 <rect key="frame" x="0.0" y="484" width="320" height="84"/>
                                 <color key="backgroundColor" red="0.42745098040000001" green="0.69411764710000001" blue="0.29803921570000003" alpha="0.59999999999999998" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="BID-wv-d2k"/>
+                                </constraints>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -114,10 +149,7 @@
                                     <segue destination="BYZ-38-t0r" kind="push" id="sgz-No-hVo"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="29E-I6-EhY">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sNg-ZV-6GJ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sNg-ZV-6GJ">
                                 <rect key="frame" x="41" y="155" width="239" height="252.5"/>
                                 <string key="text">...don't know the exact name of your stop? No worries, just speak a close description. For example, "USC/ Exposition Station" could be called USC, exposition, science museum, coliseum, etc</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -126,12 +158,23 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Idv-HU-oIY" firstAttribute="top" secondItem="OFj-0g-vev" secondAttribute="bottom" id="8Ht-Ii-Zwa"/>
+                            <constraint firstAttribute="trailing" secondItem="29E-I6-EhY" secondAttribute="trailing" id="DOY-fc-qy4"/>
+                            <constraint firstItem="OFj-0g-vev" firstAttribute="leading" secondItem="lvk-jw-xlV" secondAttribute="leading" id="PsV-IL-52I"/>
+                            <constraint firstItem="OFj-0g-vev" firstAttribute="top" secondItem="29E-I6-EhY" secondAttribute="bottom" id="Pub-ei-mO8"/>
+                            <constraint firstItem="sNg-ZV-6GJ" firstAttribute="centerX" secondItem="lvk-jw-xlV" secondAttribute="centerX" id="ZTj-rr-uTx"/>
+                            <constraint firstItem="29E-I6-EhY" firstAttribute="top" secondItem="lvk-jw-xlV" secondAttribute="top" id="hZN-hb-quF"/>
+                            <constraint firstItem="sNg-ZV-6GJ" firstAttribute="centerY" secondItem="lvk-jw-xlV" secondAttribute="centerY" id="oUE-FN-xPu"/>
+                            <constraint firstItem="29E-I6-EhY" firstAttribute="leading" secondItem="lvk-jw-xlV" secondAttribute="leading" id="ohc-1L-tGg"/>
+                            <constraint firstAttribute="trailing" secondItem="OFj-0g-vev" secondAttribute="trailing" id="uLx-Ym-tfG"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dSR-UR-W8t"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dfa-SJ-p0w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2024" y="76"/>
+            <point key="canvasLocation" x="2196" y="81"/>
         </scene>
         <!--RailTalk-->
         <scene sceneID="tne-QT-ifu">
@@ -148,9 +191,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="train" translatesAutoresizingMaskIntoConstraints="NO" id="haP-4i-NEj">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnV-zJ-U4b">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnV-zJ-U4b">
                                 <rect key="frame" x="0.0" y="484" width="320" height="84"/>
                                 <color key="backgroundColor" red="0.42745098040000001" green="0.69411764710000001" blue="0.29803921570000003" alpha="0.59999999999999998" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="jzs-Dl-2Qe"/>
+                                </constraints>
                                 <state key="normal" title="Stuck? Return to your training.">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -159,7 +205,7 @@
                                     <segue destination="uyS-bt-Xci" kind="push" id="cRI-ye-zqJ"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Try: when will the expo arrive at the coliseum?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CV8-vb-Td1">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Try: when will the expo arrive at the coliseum?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CV8-vb-Td1">
                                 <rect key="frame" x="0.0" y="60" width="320" height="61"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -168,11 +214,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CV8-vb-Td1" secondAttribute="trailing" id="16n-q8-4L9"/>
+                            <constraint firstAttribute="trailing" secondItem="hnV-zJ-U4b" secondAttribute="trailing" id="1UE-BR-4LN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="haP-4i-NEj" secondAttribute="trailing" id="45z-Cf-F2F"/>
                             <constraint firstItem="haP-4i-NEj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9P2-hQ-5qI"/>
+                            <constraint firstItem="CV8-vb-Td1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="A4G-Q7-kej"/>
                             <constraint firstItem="haP-4i-NEj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="F0X-gs-LDr"/>
                             <constraint firstItem="haP-4i-NEj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="F3O-0Z-uDj"/>
+                            <constraint firstAttribute="bottom" secondItem="hnV-zJ-U4b" secondAttribute="bottom" id="Gc6-dP-uaK"/>
                             <constraint firstItem="haP-4i-NEj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Mcc-TJ-9Sk"/>
+                            <constraint firstItem="hnV-zJ-U4b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NQ9-IJ-caq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="haP-4i-NEj" secondAttribute="trailing" constant="-20" id="PYa-kg-MS0"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="haP-4i-NEj" secondAttribute="bottom" id="YdS-Tz-wiZ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="haP-4i-NEj" secondAttribute="bottom" id="ncl-9a-V5Q"/>
@@ -184,7 +235,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2375" y="81"/>
+            <point key="canvasLocation" x="2599" y="93"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P9V-Pw-tvg">
@@ -203,7 +254,63 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UxB-S9-N5x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="732" y="77"/>
+            <point key="canvasLocation" x="524" y="93"/>
+        </scene>
+        <!--RailTalk-->
+        <scene sceneID="Ed3-pw-ZSM">
+            <objects>
+                <viewController id="94u-xh-Wet" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tc6-4H-3u6"/>
+                        <viewControllerLayoutGuide type="bottom" id="suX-Ay-b0o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ojR-Gf-f6i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="1Lc-ni-0h5">
+                                <rect key="frame" x="0.0" y="64" width="320" height="420"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Welcome. RailTalk is intelligent assistant that uses language to predict arrival times of nearby LA Metro trains. " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="D9R-xo-1dj">
+                                <rect key="frame" x="40.5" y="180.5" width="239" height="207"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="239" id="9BP-ZK-qJM"/>
+                                    <constraint firstAttribute="height" constant="207" id="noM-IX-S3M"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCZ-b2-uWP">
+                                <rect key="frame" x="0.0" y="484" width="320" height="84"/>
+                                <color key="backgroundColor" red="0.42745098040000001" green="0.69411764710000001" blue="0.29803921570000003" alpha="0.59999999999999998" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="1DO-zZ-rFp"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="suX-Ay-b0o" firstAttribute="top" secondItem="pCZ-b2-uWP" secondAttribute="bottom" id="Cbd-Xk-G37"/>
+                            <constraint firstItem="D9R-xo-1dj" firstAttribute="centerY" secondItem="ojR-Gf-f6i" secondAttribute="centerY" id="FY0-Mg-4Vd"/>
+                            <constraint firstItem="pCZ-b2-uWP" firstAttribute="top" secondItem="1Lc-ni-0h5" secondAttribute="bottom" id="GHW-4f-y71"/>
+                            <constraint firstItem="D9R-xo-1dj" firstAttribute="centerX" secondItem="ojR-Gf-f6i" secondAttribute="centerX" id="Nqh-DD-HJQ"/>
+                            <constraint firstItem="pCZ-b2-uWP" firstAttribute="leading" secondItem="ojR-Gf-f6i" secondAttribute="leading" id="ZqT-oF-Zjp"/>
+                            <constraint firstAttribute="trailing" secondItem="1Lc-ni-0h5" secondAttribute="trailing" id="l78-Dr-K4Q"/>
+                            <constraint firstItem="1Lc-ni-0h5" firstAttribute="top" secondItem="Tc6-4H-3u6" secondAttribute="bottom" id="ng9-7a-0px"/>
+                            <constraint firstItem="1Lc-ni-0h5" firstAttribute="leading" secondItem="ojR-Gf-f6i" secondAttribute="leading" id="oIM-Zk-CNO"/>
+                            <constraint firstAttribute="trailing" secondItem="pCZ-b2-uWP" secondAttribute="trailing" id="uyb-DN-A0K"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="RailTalk" id="VwO-s3-cWI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R61-Ek-6aW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952" y="101"/>
         </scene>
     </scenes>
     <resources>
@@ -211,6 +318,6 @@
         <image name="train" width="2550" height="2641"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wNC-F0-cGs"/>
+        <segue reference="cRI-ye-zqJ"/>
     </inferredMetricsTieBreakers>
 </document>
